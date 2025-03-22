@@ -135,9 +135,4 @@ if __name__ == "__main__":
         precision, recall, f1 = evaluate_recommendations(user_id, recs, events_df, user_interests, event_categories)
         print(f"  Precision={precision:.2f}, Recall={recall:.2f}, F1={f1:.2f}")
     
-    # Organizer insights
-    print("\nGenerating organizer insights...")
-    insights = organizer_insights(events_df, bookings_df, organizers_df)
-    print(insights.head())
-    
-    print(f"\nTotal runtime: {time.time() - start_time:.2f} seconds")
+   
