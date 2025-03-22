@@ -1,0 +1,1001 @@
+organizer_id,name,event_id,ticket_sales,pricing_strategy,feedback_score
+O0001,Moore-West,E0001,22810,Low,4.06
+O0002,Stewart-Castaneda,E0002,27718,Low,1.06
+O0003,Hardin and Sons,E0003,17815,Medium,3.9
+O0004,Mccall-Anderson,E0004,32058,Medium,3.81
+O0005,Gibbs and Sons,E0005,2506,High,1.41
+O0006,Taylor-Walton,E0006,5798,Low,3.23
+O0007,Colon-Martinez,E0007,42692,High,3.74
+O0008,Haynes Group,E0008,47034,Low,1.36
+O0009,Patrick-Nicholson,E0009,38091,Medium,3.25
+O0010,Pope Inc,E0010,47788,High,3.28
+O0011,Boyle-Jones,E0011,8851,Low,1.21
+O0012,"Richards, Morgan and Jones",E0012,45554,Low,4.19
+O0013,"Moore, Logan and Evans",E0013,25340,Medium,3.09
+O0014,Johnson PLC,E0014,22219,Medium,1.68
+O0015,Cole-Cohen,E0015,5878,High,1.25
+O0016,Weaver and Sons,E0016,14078,Medium,2.18
+O0017,"Browning, Taylor and Taylor",E0017,29081,Medium,2.92
+O0018,Taylor Inc,E0018,20239,Medium,3.99
+O0019,"Mitchell, Gonzales and Davis",E0019,28106,Low,4.55
+O0020,"Smith, Lewis and Figueroa",E0020,42286,Low,1.41
+O0021,Ferguson-Miller,E0021,11840,High,4.74
+O0022,Stewart-Morrison,E0022,4879,High,1.2
+O0023,Brooks PLC,E0023,32983,Low,3.91
+O0024,"Dixon, Wright and Palmer",E0024,20295,High,1.13
+O0025,Harris-Fisher,E0025,34974,Low,3.05
+O0026,Kelley-Martinez,E0026,38557,High,2.09
+O0027,"Russell, Donaldson and Ford",E0027,30759,Medium,1.66
+O0028,Rogers-Robinson,E0028,41676,Medium,1.42
+O0029,Miller Group,E0029,7781,High,2.79
+O0030,Webster PLC,E0030,17568,Low,1.77
+O0031,Romero and Sons,E0031,17895,High,4.49
+O0032,"Coleman, Vargas and Flores",E0032,7642,Medium,4.73
+O0033,Moss PLC,E0033,22902,High,3.91
+O0034,Fox Ltd,E0034,26551,Low,1.14
+O0035,"Diaz, Sanders and Miller",E0035,15029,Low,1.26
+O0036,Chan-Davis,E0036,2086,High,3.24
+O0037,Schwartz LLC,E0037,28686,High,3.74
+O0038,Gray PLC,E0038,20397,High,4.84
+O0039,Alvarez-Choi,E0039,27168,Medium,4.09
+O0040,Davis Inc,E0040,45587,Medium,3.92
+O0041,"Manning, Middleton and Marks",E0041,42537,High,3.67
+O0042,"Yu, Cooley and Kelly",E0042,36087,High,2.95
+O0043,Hall-Gomez,E0043,35781,Medium,1.28
+O0044,"Smith, Cummings and Alexander",E0044,8351,High,1.18
+O0045,Rogers LLC,E0045,10182,High,1.89
+O0046,Goodwin-Baker,E0046,9477,Medium,4.43
+O0047,Flynn-Gross,E0047,30918,Low,3.97
+O0048,Cole-Martinez,E0048,44445,High,3.51
+O0049,Davies LLC,E0049,44787,Low,3.48
+O0050,Hobbs-Little,E0050,44479,Medium,4.77
+O0051,"Lopez, Moore and Duffy",E0051,38924,Low,2.32
+O0052,Mathis-Mcfarland,E0052,28409,High,3.16
+O0053,Brown-Miller,E0053,14878,High,4.98
+O0054,Trevino-Hays,E0054,7348,Medium,4.7
+O0055,Mann Ltd,E0055,30163,High,3.28
+O0056,Brown-Mooney,E0056,8106,Low,4.54
+O0057,"Carter, Carlson and Gutierrez",E0057,1886,Medium,3.36
+O0058,Roberson-Kemp,E0058,24371,Medium,4.46
+O0059,"Mccoy, Johnson and Lopez",E0059,4641,Medium,4.5
+O0060,Cunningham Ltd,E0060,42025,High,4.21
+O0061,"Hughes, Farrell and Erickson",E0061,49064,High,2.65
+O0062,Cox-Murphy,E0062,11206,Low,1.66
+O0063,Cunningham Inc,E0063,12150,High,2.87
+O0064,"Thomas, Mitchell and Rose",E0064,48667,High,2.62
+O0065,Fisher-Morales,E0065,20331,Medium,3.5
+O0066,Avery Inc,E0066,10966,Low,1.81
+O0067,"Jackson, Bernard and Martinez",E0067,31381,Medium,1.2
+O0068,Barnes-Short,E0068,1432,Low,1.51
+O0069,"Craig, Robertson and Price",E0069,31436,Low,3.74
+O0070,Snow Ltd,E0070,4002,Medium,2.23
+O0071,Rodriguez Inc,E0071,19195,Medium,2.37
+O0072,Powell-Williams,E0072,16376,High,1.15
+O0073,Gonzales-Rodriguez,E0073,40928,Medium,1.78
+O0074,Owens-Cooper,E0074,45298,Low,1.22
+O0075,Duncan Ltd,E0075,27953,Low,3.89
+O0076,Rowe Group,E0076,38791,Medium,2.33
+O0077,White-Walters,E0077,25613,Low,1.1
+O0078,Meyer-Ortiz,E0078,18493,High,2.17
+O0079,Meyer-Lowery,E0079,34774,Low,3.97
+O0080,Rodriguez-Fletcher,E0080,34072,Medium,4.41
+O0081,Garcia and Sons,E0081,16443,High,2.08
+O0082,Harris Group,E0082,40463,Medium,1.31
+O0083,"Stewart, Garcia and Murphy",E0083,2681,Medium,3.96
+O0084,Hernandez PLC,E0084,7050,High,3.68
+O0085,Jones-Green,E0085,32826,Low,3.3
+O0086,"Brown, Johnson and Wheeler",E0086,31332,Medium,4.15
+O0087,"Cooper, Kim and Murphy",E0087,24420,High,3.56
+O0088,"Thomas, Logan and Jones",E0088,36199,High,2.11
+O0089,Patel PLC,E0089,31559,Medium,2.37
+O0090,Rowland Ltd,E0090,47069,High,3.58
+O0091,Watts Ltd,E0091,45924,High,1.61
+O0092,"Allen, Potter and Obrien",E0092,25948,Medium,3.73
+O0093,"David, Hill and Bauer",E0093,15416,High,3.51
+O0094,Fuller-Jordan,E0094,39225,Medium,2.08
+O0095,Smith-Bullock,E0095,49249,Medium,2.06
+O0096,Anderson Ltd,E0096,23966,Medium,4.68
+O0097,"Gregory, Robinson and Ferguson",E0097,8045,Low,3.4
+O0098,Lee PLC,E0098,6955,Medium,2.45
+O0099,Jenkins Group,E0099,19025,Medium,1.88
+O0100,Howard LLC,E0100,46572,Medium,4.24
+O0101,"Carr, Davis and Hayes",E0101,10068,High,3.87
+O0102,Ayers and Sons,E0102,19165,Low,2.34
+O0103,"Thomas, Weaver and Page",E0103,4987,High,3.3
+O0104,Howell Group,E0104,30673,High,2.67
+O0105,Daniels-Smith,E0105,15694,Low,4.07
+O0106,Smith Inc,E0106,4803,Medium,4.26
+O0107,"Alvarez, Robinson and Hamilton",E0107,42262,High,2.41
+O0108,"Smith, Garza and Andrews",E0108,36393,Medium,1.72
+O0109,Howard-Molina,E0109,3212,High,1.68
+O0110,Mooney-Rogers,E0110,26226,High,3.93
+O0111,"Jones, Carter and Morrison",E0111,38759,Low,2.66
+O0112,West-Clark,E0112,20537,High,4.09
+O0113,"Crawford, Olson and Jenkins",E0113,10307,Low,3.89
+O0114,"Murray, Mann and Vasquez",E0114,6087,Medium,2.37
+O0115,Ramirez-Moyer,E0115,32665,Low,4.41
+O0116,"Oneal, Taylor and Clark",E0116,42773,High,4.19
+O0117,Jones PLC,E0117,2509,High,3.68
+O0118,White-York,E0118,3382,Low,3.45
+O0119,"Jones, Wright and White",E0119,39315,Medium,2.97
+O0120,Kelly PLC,E0120,3385,Low,2.55
+O0121,Yates LLC,E0121,7267,High,4.67
+O0122,Rogers PLC,E0122,8704,High,1.2
+O0123,"Christensen, Romero and Solis",E0123,23766,High,2.52
+O0124,Kemp-Little,E0124,31660,High,4.57
+O0125,"Peterson, Smith and Ramirez",E0125,10625,Medium,3.1
+O0126,Durham Group,E0126,33392,Low,2.09
+O0127,"English, Meyer and Cowan",E0127,12986,Medium,1.8
+O0128,"Cobb, Peck and Browning",E0128,6492,High,2.1
+O0129,"Meyer, Price and Gibson",E0129,25814,Medium,4.65
+O0130,Ramos-Nelson,E0130,23930,High,3.04
+O0131,"Munoz, Best and Brown",E0131,1306,High,2.11
+O0132,Humphrey-Allen,E0132,36763,High,3.9
+O0133,"Morris, Ramos and Salazar",E0133,13947,Low,3.43
+O0134,"Henry, Henry and Gardner",E0134,23241,Medium,2.68
+O0135,Kirk Ltd,E0135,12068,Low,4.72
+O0136,Powell LLC,E0136,38625,Low,1.48
+O0137,"Nelson, Jones and Simmons",E0137,2897,Medium,4.36
+O0138,"James, Lopez and Kim",E0138,1874,High,4.27
+O0139,Ford-Johnson,E0139,6671,Medium,1.16
+O0140,Flores-Young,E0140,19857,Low,3.31
+O0141,"Tucker, Leonard and Huynh",E0141,44931,Medium,2.77
+O0142,"Oconnor, Davis and Johnson",E0142,19994,Low,1.05
+O0143,Campos PLC,E0143,4598,Medium,3.51
+O0144,"Calderon, Jenkins and Smith",E0144,41243,Medium,3.01
+O0145,"Hernandez, Snyder and Perez",E0145,4409,Low,1.77
+O0146,Jensen-Jones,E0146,32039,Medium,1.06
+O0147,Wilson-Harris,E0147,12779,High,1.58
+O0148,Hardin-Elliott,E0148,42356,Low,1.44
+O0149,Mcdonald-Whitehead,E0149,16853,High,1.1
+O0150,Jackson PLC,E0150,27575,Low,3.42
+O0151,Scott-Graves,E0151,15955,High,4.27
+O0152,"Flores, Williams and Neal",E0152,45180,High,1.59
+O0153,Garcia Ltd,E0153,4450,Medium,2.7
+O0154,"Ewing, Garcia and Lawson",E0154,24805,Low,1.67
+O0155,Carter-Parker,E0155,16502,High,3.61
+O0156,Ferguson-Hansen,E0156,19117,Medium,3.0
+O0157,Rivera-Sharp,E0157,6739,Low,2.48
+O0158,Pratt-Bartlett,E0158,22065,High,2.86
+O0159,"Reyes, Harrison and Miller",E0159,11921,High,3.7
+O0160,Miller-Boyer,E0160,24884,High,4.35
+O0161,Walker-Castro,E0161,42910,High,2.28
+O0162,Reed PLC,E0162,2422,High,1.52
+O0163,Hughes Ltd,E0163,29468,High,4.91
+O0164,Gonzalez-Lowe,E0164,47005,High,4.08
+O0165,Walker Group,E0165,26692,High,3.67
+O0166,"Green, Cowan and Johnston",E0166,22558,Medium,3.41
+O0167,Perkins-Fuller,E0167,19924,High,3.13
+O0168,Reed-Ochoa,E0168,8600,Low,1.61
+O0169,"Jones, Flores and Carlson",E0169,24412,High,4.78
+O0170,Harris-Sims,E0170,41995,Medium,1.03
+O0171,"Brown, Scott and Stephens",E0171,34151,Low,1.19
+O0172,"Dickson, Sparks and Smith",E0172,1921,Medium,3.83
+O0173,Greene Group,E0173,22948,Medium,3.32
+O0174,Clark-Johnson,E0174,47586,Low,2.43
+O0175,"Boyd, Burgess and Rose",E0175,29735,Low,4.18
+O0176,Patton-Obrien,E0176,18270,Low,1.95
+O0177,"Parsons, Parks and Zimmerman",E0177,41030,High,3.63
+O0178,Cole Ltd,E0178,25438,Medium,3.82
+O0179,Cardenas-Higgins,E0179,34759,Medium,2.64
+O0180,"Mills, Tanner and Huff",E0180,30931,Medium,2.57
+O0181,Hall-Brooks,E0181,29961,Medium,3.26
+O0182,"Gutierrez, Williams and Wolfe",E0182,14829,Medium,1.46
+O0183,Tucker-Wilson,E0183,23860,Medium,3.75
+O0184,Weiss Group,E0184,11497,Low,4.51
+O0185,"Price, Perkins and Arnold",E0185,25871,Medium,4.14
+O0186,Lopez LLC,E0186,26500,Medium,4.57
+O0187,"Kennedy, York and Davis",E0187,28865,Low,2.32
+O0188,"Mccarthy, Knight and Arias",E0188,42769,Medium,3.66
+O0189,Jensen PLC,E0189,48146,Medium,3.03
+O0190,Rodriguez Inc,E0190,5094,Medium,4.55
+O0191,"Yoder, Harrison and Gibbs",E0191,34756,Low,2.83
+O0192,Patterson-Taylor,E0192,26747,High,3.87
+O0193,Fleming Inc,E0193,45585,High,3.99
+O0194,"Willis, Brewer and Padilla",E0194,26046,High,3.25
+O0195,"Craig, Robinson and Andrade",E0195,24628,High,2.9
+O0196,"Chen, Olson and Harding",E0196,47789,Low,4.85
+O0197,"Lynch, Mathews and Perry",E0197,14187,Medium,4.43
+O0198,Powell-Montgomery,E0198,4420,High,3.56
+O0199,Quinn-Mccormick,E0199,32882,Medium,2.17
+O0200,Stokes-Vaughn,E0200,22176,Low,1.29
+O0201,Lewis Inc,E0201,48567,High,1.57
+O0202,Flowers Inc,E0202,37037,Medium,2.98
+O0203,"Jones, Walker and West",E0203,24733,Low,1.67
+O0204,Hodge PLC,E0204,16553,High,1.64
+O0205,"Morales, Chase and Ruiz",E0205,27823,Low,4.95
+O0206,Solis-Mcgee,E0206,19662,Medium,3.59
+O0207,Walters LLC,E0207,5694,Medium,3.63
+O0208,Brown-Stephens,E0208,12539,Low,2.29
+O0209,Oneill Group,E0209,48535,Medium,2.18
+O0210,"Barton, Romero and Taylor",E0210,7031,High,4.36
+O0211,"Foster, Salazar and Stanton",E0211,13543,High,2.02
+O0212,Estrada Inc,E0212,42006,Medium,3.01
+O0213,Whitaker-Lee,E0213,2865,Medium,1.85
+O0214,Hawkins Group,E0214,7455,High,3.52
+O0215,Skinner Ltd,E0215,49060,Low,1.08
+O0216,"Johnson, Stevenson and Richards",E0216,10201,Medium,1.1
+O0217,"Chavez, Curry and Banks",E0217,8534,Low,4.65
+O0218,"Russo, Lopez and Morgan",E0218,49881,High,1.42
+O0219,"Mayo, Hodge and Pham",E0219,45351,High,3.37
+O0220,Howard and Sons,E0220,30207,Low,1.75
+O0221,"Anderson, Johnson and Palmer",E0221,25438,Medium,2.66
+O0222,Harper PLC,E0222,8819,Medium,2.61
+O0223,Ramirez LLC,E0223,1416,Low,3.41
+O0224,"Donaldson, Merritt and Wright",E0224,22057,Low,2.89
+O0225,"Patterson, Rivera and Navarro",E0225,36810,Low,2.2
+O0226,Perez Ltd,E0226,6077,Medium,2.62
+O0227,"Wilkerson, Cox and Cruz",E0227,14386,Medium,1.06
+O0228,"Burke, Brooks and Mathews",E0228,1142,Medium,2.56
+O0229,"Anderson, Cochran and Riggs",E0229,43183,Low,2.76
+O0230,Anderson LLC,E0230,15072,Low,2.35
+O0231,"Hawkins, Tran and Walker",E0231,14728,Low,1.43
+O0232,"Woods, Austin and Welch",E0232,43419,High,1.28
+O0233,Ross-James,E0233,21418,High,1.31
+O0234,"Jackson, Flores and Jones",E0234,4626,Medium,2.19
+O0235,Williams-Church,E0235,13523,Low,3.91
+O0236,Maldonado and Sons,E0236,37744,Medium,1.36
+O0237,Jones-Dougherty,E0237,17959,High,4.88
+O0238,Johnson LLC,E0238,18106,High,4.19
+O0239,Montgomery-Powell,E0239,28460,High,2.03
+O0240,Howell Group,E0240,43184,Low,1.29
+O0241,"Houston, Winters and Haney",E0241,8663,Low,4.78
+O0242,Horn Inc,E0242,34059,Medium,3.08
+O0243,Welch-Rogers,E0243,47480,High,1.8
+O0244,"Barnett, Lowe and Spencer",E0244,44472,Low,3.05
+O0245,"Anderson, Williams and Anderson",E0245,8178,Low,4.73
+O0246,Smith Ltd,E0246,37434,Low,3.46
+O0247,"Hickman, Reynolds and Wood",E0247,23392,High,4.79
+O0248,Sparks and Sons,E0248,34792,Medium,4.7
+O0249,"Rivas, Fletcher and Johnson",E0249,33360,Medium,3.53
+O0250,Vaughan LLC,E0250,43842,Low,1.28
+O0251,Maldonado-Vazquez,E0251,15683,High,1.87
+O0252,Wang-Smith,E0252,31559,Medium,3.16
+O0253,Hurley-Espinoza,E0253,14519,Low,1.85
+O0254,"Pena, Huerta and Floyd",E0254,24585,Medium,1.07
+O0255,Odonnell PLC,E0255,22643,Medium,1.59
+O0256,Jimenez-Koch,E0256,4326,High,3.13
+O0257,Lewis Inc,E0257,24248,High,3.36
+O0258,Mcclure Ltd,E0258,22343,Medium,1.69
+O0259,"Jones, Nelson and Johnson",E0259,14279,High,1.62
+O0260,Cisneros and Sons,E0260,49987,High,1.43
+O0261,Smith-Brown,E0261,41176,Medium,4.82
+O0262,Schneider-Salazar,E0262,24173,Medium,3.2
+O0263,Herrera-Ryan,E0263,15207,High,3.51
+O0264,"Ward, Hernandez and Jackson",E0264,10407,Medium,3.28
+O0265,"Lozano, Martinez and Rogers",E0265,14127,Medium,4.14
+O0266,"Rodriguez, Stevens and Nelson",E0266,13947,High,1.19
+O0267,Jacobson-Nelson,E0267,2473,Medium,1.05
+O0268,"Hudson, Melendez and Coleman",E0268,9272,Low,4.58
+O0269,Lam PLC,E0269,35884,Low,1.61
+O0270,Miller PLC,E0270,8810,High,2.27
+O0271,Hall-Foster,E0271,3544,Low,3.99
+O0272,Moore-Garrett,E0272,23849,Medium,3.57
+O0273,Tate Ltd,E0273,34558,High,1.36
+O0274,Hahn-Cobb,E0274,42281,Low,1.46
+O0275,Bennett-Clark,E0275,20736,Medium,4.75
+O0276,"Greene, Allen and Miller",E0276,18460,Medium,1.56
+O0277,Chandler Inc,E0277,39873,High,2.29
+O0278,Calderon Inc,E0278,31580,Medium,2.64
+O0279,Leon and Sons,E0279,49195,High,2.3
+O0280,Collins-Pierce,E0280,24130,Low,1.84
+O0281,Young LLC,E0281,28394,Medium,1.64
+O0282,"Krueger, Eaton and Robertson",E0282,37530,Medium,3.75
+O0283,"Taylor, Miller and Cowan",E0283,27450,Low,2.1
+O0284,Mason Ltd,E0284,11616,Medium,1.87
+O0285,Navarro PLC,E0285,35188,Medium,2.31
+O0286,"Parks, Stevens and Blair",E0286,5897,High,3.85
+O0287,Mathews-Cochran,E0287,41264,High,2.92
+O0288,Zavala and Sons,E0288,25605,High,4.53
+O0289,Moore-Woods,E0289,38812,Medium,3.21
+O0290,Cannon Ltd,E0290,18398,Medium,4.89
+O0291,"Johnson, Reid and Sandoval",E0291,46732,Low,4.29
+O0292,"Long, Evans and Ramos",E0292,49757,Medium,4.91
+O0293,Ray LLC,E0293,46173,High,4.55
+O0294,Burns-Smith,E0294,41733,Medium,4.26
+O0295,Turner-Solis,E0295,19939,High,2.94
+O0296,Bridges-Holland,E0296,25086,High,2.11
+O0297,"Reynolds, Rivera and Woodward",E0297,8203,High,1.06
+O0298,"Khan, Arias and King",E0298,5207,Medium,1.26
+O0299,Scott Inc,E0299,38132,Medium,1.13
+O0300,"Kirby, Rodriguez and Franklin",E0300,5465,Medium,4.51
+O0301,Bridges Ltd,E0301,8708,Medium,3.13
+O0302,"Benson, Kim and Crawford",E0302,1474,High,4.67
+O0303,Long and Sons,E0303,3027,High,1.68
+O0304,Guerra Inc,E0304,29613,High,2.91
+O0305,Walker Group,E0305,26650,Low,2.63
+O0306,Scott LLC,E0306,48289,High,4.21
+O0307,Valenzuela LLC,E0307,27790,Low,4.16
+O0308,"Hendrix, Rivera and Hughes",E0308,32600,High,3.76
+O0309,Nolan and Sons,E0309,4669,Medium,4.06
+O0310,Pitts-Thompson,E0310,8001,Low,4.22
+O0311,Parks Group,E0311,1921,High,4.38
+O0312,"Barnes, Martinez and Williams",E0312,35507,Low,2.05
+O0313,"Boyd, Vega and Lopez",E0313,35585,Low,2.77
+O0314,Jones-Raymond,E0314,45086,Medium,4.57
+O0315,"Villarreal, Burke and Arnold",E0315,21820,Low,2.29
+O0316,"Cox, Brown and Kelly",E0316,17640,High,4.06
+O0317,"Foster, Day and Collins",E0317,16993,Low,4.39
+O0318,Clark-Mullins,E0318,9979,High,1.49
+O0319,"Johnson, Spence and Stokes",E0319,24646,Low,3.89
+O0320,"Wallace, Johnson and Fry",E0320,46509,Medium,2.26
+O0321,Mcdaniel-Garrett,E0321,27475,Medium,2.54
+O0322,Lloyd-Nelson,E0322,8696,Low,3.07
+O0323,"Gordon, Wilson and Dalton",E0323,28717,Medium,3.02
+O0324,Erickson PLC,E0324,16159,Low,4.47
+O0325,Andersen and Sons,E0325,16259,High,2.82
+O0326,"Crane, Gonzalez and Rodriguez",E0326,24618,Medium,1.01
+O0327,Lopez Inc,E0327,33598,Medium,2.59
+O0328,Jackson Ltd,E0328,33237,High,4.3
+O0329,Harvey-Barnett,E0329,18696,Medium,1.75
+O0330,Weaver LLC,E0330,46710,Medium,4.95
+O0331,Walker-Young,E0331,2216,Medium,2.94
+O0332,"Rowe, Brown and Hensley",E0332,14119,Medium,3.39
+O0333,"Moody, Peterson and Fox",E0333,44689,Low,2.32
+O0334,Martin-Weaver,E0334,5080,Low,4.35
+O0335,Richard-Cooper,E0335,22814,Low,3.73
+O0336,Cruz Ltd,E0336,19820,High,4.66
+O0337,Galvan Inc,E0337,4558,High,1.67
+O0338,Mccoy-Holloway,E0338,32658,Medium,4.98
+O0339,Leon and Sons,E0339,21442,Medium,3.5
+O0340,Harrell PLC,E0340,26565,Low,3.95
+O0341,Bell Inc,E0341,37282,Medium,4.68
+O0342,Dean-Greene,E0342,43847,High,4.09
+O0343,Walsh-Hale,E0343,34757,Low,2.39
+O0344,"Sweeney, Martin and Stout",E0344,3434,Medium,2.04
+O0345,"Johnson, Mullins and Oconnell",E0345,35855,Medium,2.51
+O0346,Hill PLC,E0346,21707,Medium,2.54
+O0347,Cervantes-White,E0347,35792,Low,4.04
+O0348,"Wilson, Cooke and Guerra",E0348,9112,High,3.32
+O0349,Skinner-Lopez,E0349,6570,High,1.04
+O0350,Ruiz LLC,E0350,32213,Medium,1.4
+O0351,"Hernandez, Lee and Jones",E0351,25495,Medium,1.07
+O0352,Romero-Wilson,E0352,21504,High,3.39
+O0353,King-Sanchez,E0353,41461,High,4.56
+O0354,Hart-Pratt,E0354,40307,Medium,1.46
+O0355,Booker Ltd,E0355,16305,Low,4.62
+O0356,Manning-Collins,E0356,35414,Low,3.23
+O0357,"Turner, Lopez and Lowe",E0357,47283,Low,4.64
+O0358,Hall-Moore,E0358,23712,Medium,4.35
+O0359,Brooks-Zimmerman,E0359,4201,High,3.95
+O0360,Dunn PLC,E0360,19257,Low,1.33
+O0361,"Mcdonald, Castro and Young",E0361,6166,Low,2.52
+O0362,Barnes PLC,E0362,19094,Low,2.96
+O0363,Williams Ltd,E0363,45636,Low,2.08
+O0364,Mclaughlin-Reid,E0364,12186,Low,1.11
+O0365,"Wood, Smith and Patel",E0365,45589,Medium,3.54
+O0366,"Davis, Wolf and Boyer",E0366,15052,Low,4.94
+O0367,Vang Inc,E0367,37941,Medium,2.49
+O0368,Shaw-Barker,E0368,8792,Low,2.9
+O0369,Mosley Ltd,E0369,9722,Medium,2.26
+O0370,Stuart-Hardin,E0370,12674,Medium,2.78
+O0371,"Shelton, Bautista and Miller",E0371,16980,Medium,3.33
+O0372,"Medina, Jimenez and Bauer",E0372,3933,Medium,1.71
+O0373,Reid-Phillips,E0373,22740,High,4.46
+O0374,Andrade-Conley,E0374,10508,Low,3.28
+O0375,Garcia-Martin,E0375,26818,High,2.68
+O0376,Franklin Inc,E0376,6207,Medium,2.74
+O0377,Stafford LLC,E0377,5568,Medium,2.99
+O0378,Holland-Rodriguez,E0378,15857,Low,4.03
+O0379,Ballard-Delgado,E0379,11274,Low,1.51
+O0380,Atkins and Sons,E0380,28597,Low,1.65
+O0381,Flores Group,E0381,49499,Low,1.78
+O0382,Herrera-Gilbert,E0382,15761,Low,4.59
+O0383,Jones-Gomez,E0383,9605,Low,3.98
+O0384,Howard-Howell,E0384,30162,Medium,3.73
+O0385,Mercado and Sons,E0385,23833,Medium,2.59
+O0386,Evans PLC,E0386,44965,High,4.53
+O0387,"Reed, Byrd and Obrien",E0387,47962,High,4.39
+O0388,Thomas-Mullins,E0388,49757,Medium,4.69
+O0389,"Reyes, Wells and Miller",E0389,43129,Low,4.3
+O0390,"Rodriguez, Butler and Lee",E0390,26377,Low,4.18
+O0391,House-Alvarez,E0391,28899,High,1.55
+O0392,Cooper-Roberts,E0392,27716,Medium,4.99
+O0393,"Coffey, Alvarez and Wood",E0393,37782,Low,1.99
+O0394,"Ballard, Barry and Lewis",E0394,3577,Low,3.46
+O0395,"Myers, Ward and Alexander",E0395,18710,Low,4.17
+O0396,Bryan LLC,E0396,25309,Low,1.76
+O0397,Bowen LLC,E0397,37405,High,3.86
+O0398,Taylor PLC,E0398,31060,High,4.37
+O0399,Cooley-Young,E0399,11768,Medium,1.31
+O0400,Nguyen Inc,E0400,26455,Medium,1.14
+O0401,Nunez PLC,E0401,39783,Low,1.27
+O0402,Bishop-Alvarez,E0402,14713,Low,2.65
+O0403,Bell-Cooper,E0403,15475,Medium,4.41
+O0404,Rice-Patterson,E0404,30790,Medium,3.37
+O0405,Morales-Ellis,E0405,17704,High,2.09
+O0406,Randall-Woods,E0406,5140,Low,3.9
+O0407,Carpenter-Robinson,E0407,21021,High,3.06
+O0408,"Adams, Jennings and Bailey",E0408,20198,Medium,1.07
+O0409,"Quinn, Mcintosh and Hernandez",E0409,32090,Low,1.67
+O0410,Smith LLC,E0410,27815,High,2.27
+O0411,"Thomas, Chaney and Johnson",E0411,2835,Medium,4.0
+O0412,"Arnold, Woods and West",E0412,40998,Medium,3.06
+O0413,Bryant Inc,E0413,46740,High,2.16
+O0414,Martin PLC,E0414,5062,High,1.3
+O0415,Mooney PLC,E0415,32726,Medium,1.73
+O0416,Blevins Ltd,E0416,47159,High,4.62
+O0417,Torres-Estrada,E0417,23591,Low,1.18
+O0418,Sutton-Moyer,E0418,23477,Medium,2.03
+O0419,Barnes Ltd,E0419,31668,High,1.46
+O0420,"Hernandez, Goodman and Swanson",E0420,39702,Low,4.19
+O0421,Williams-Campbell,E0421,43507,Medium,1.41
+O0422,Castillo-Long,E0422,9262,High,2.37
+O0423,"Wilkerson, Torres and Edwards",E0423,10180,Medium,1.74
+O0424,Soto and Sons,E0424,32524,Medium,2.35
+O0425,Lopez-Stone,E0425,9726,Low,1.23
+O0426,Mullins-Clark,E0426,35450,Low,1.52
+O0427,"Martinez, Knight and Galloway",E0427,45222,Medium,4.44
+O0428,King-Evans,E0428,7240,Medium,2.73
+O0429,"Rivera, Griffin and Cabrera",E0429,30570,Medium,4.55
+O0430,Boyd-Campos,E0430,35191,High,3.16
+O0431,Jones Ltd,E0431,21814,Medium,2.11
+O0432,"Cook, Swanson and Bolton",E0432,22116,Medium,4.16
+O0433,"Burton, Randolph and Reeves",E0433,46915,Low,3.36
+O0434,"Gallagher, Skinner and Walker",E0434,13659,Medium,1.09
+O0435,"Walter, Brown and Welch",E0435,2977,High,3.27
+O0436,Perez-Munoz,E0436,18674,Medium,4.67
+O0437,"Wilson, Meyer and Arias",E0437,45889,Medium,1.95
+O0438,"Sullivan, Conley and Bailey",E0438,47202,Low,3.89
+O0439,Marshall LLC,E0439,38825,Low,4.18
+O0440,Leonard-Fletcher,E0440,12755,Low,2.24
+O0441,"Simon, Williams and Wallace",E0441,39166,High,1.91
+O0442,"Johnson, Williamson and Taylor",E0442,1533,Low,4.28
+O0443,"Clark, Rogers and Callahan",E0443,48896,Low,4.46
+O0444,"Obrien, Brown and Jefferson",E0444,5398,Medium,3.71
+O0445,Mills Ltd,E0445,43043,Medium,4.76
+O0446,Thompson Group,E0446,29082,High,1.12
+O0447,Williams-Jordan,E0447,20896,Low,4.03
+O0448,Jackson-Strickland,E0448,3600,High,1.9
+O0449,Hurley-Smith,E0449,43133,Low,2.75
+O0450,"Johnson, Hill and Holland",E0450,4277,High,3.31
+O0451,"Murray, Hughes and Keith",E0451,4150,Low,2.79
+O0452,Branch-Phillips,E0452,10334,High,2.4
+O0453,"Anderson, Scott and Daniels",E0453,43928,Medium,2.57
+O0454,"Hayes, Beasley and Leonard",E0454,19242,Low,3.02
+O0455,"Hays, Wilson and Reese",E0455,33846,Medium,2.86
+O0456,Kirk-Snyder,E0456,8211,Low,3.6
+O0457,Smith Ltd,E0457,4828,High,3.85
+O0458,Martin LLC,E0458,14820,High,4.34
+O0459,Martinez-Moore,E0459,26913,Low,4.08
+O0460,Gaines Ltd,E0460,5694,High,2.95
+O0461,Newman PLC,E0461,47870,Low,1.17
+O0462,"Hernandez, Mccullough and Moreno",E0462,15884,Medium,4.02
+O0463,Garcia Inc,E0463,45495,Medium,4.21
+O0464,Garcia-Neal,E0464,24017,Low,3.81
+O0465,"Fuller, Porter and Simmons",E0465,37011,Medium,3.93
+O0466,"Black, Vaughn and Walter",E0466,1687,Medium,2.19
+O0467,Elliott LLC,E0467,7870,Medium,2.23
+O0468,"Yates, Cardenas and Eaton",E0468,7913,High,3.04
+O0469,Hensley-Sosa,E0469,48210,High,3.45
+O0470,Harvey Inc,E0470,44729,Medium,4.25
+O0471,"Merritt, Stephenson and Johnson",E0471,49129,Medium,3.4
+O0472,"Weiss, Adams and Mullins",E0472,33877,High,1.71
+O0473,"Wallace, Reynolds and Hawkins",E0473,20342,Low,2.88
+O0474,"Walker, Clark and King",E0474,4524,High,3.0
+O0475,Vaughn-Wilson,E0475,1923,Medium,1.53
+O0476,Mcknight Group,E0476,4829,High,2.58
+O0477,"Dalton, Franklin and Miller",E0477,32739,Medium,1.07
+O0478,"Wilson, Lowe and Cooper",E0478,30438,Low,1.69
+O0479,Davis-James,E0479,28146,Medium,4.79
+O0480,Roberson Inc,E0480,44307,Low,2.8
+O0481,Garcia Group,E0481,23228,Medium,2.82
+O0482,Pearson-Johnson,E0482,3277,Low,1.0
+O0483,Thomas-Mills,E0483,6137,Low,4.54
+O0484,Brady Group,E0484,13487,Medium,1.51
+O0485,Floyd Ltd,E0485,27465,Medium,2.97
+O0486,Sanders PLC,E0486,11095,Medium,4.56
+O0487,Ross and Sons,E0487,1367,Low,4.82
+O0488,Jones-Best,E0488,13973,Low,2.34
+O0489,"Thomas, Knight and Brown",E0489,49744,High,2.07
+O0490,"Johnson, Wallace and Williams",E0490,25572,High,3.01
+O0491,Morales Ltd,E0491,15766,High,4.63
+O0492,"Ayers, Torres and Cook",E0492,34310,High,2.68
+O0493,Cruz-Lawson,E0493,40298,Low,1.73
+O0494,Scott-Torres,E0494,11835,Medium,2.38
+O0495,Hernandez-Sparks,E0495,17348,Medium,2.94
+O0496,Elliott-Sawyer,E0496,43815,Medium,2.54
+O0497,Stevens-Delgado,E0497,23485,Medium,3.03
+O0498,"Hicks, Stein and Jensen",E0498,18133,High,3.27
+O0499,Clark PLC,E0499,45067,Medium,3.09
+O0500,Richardson-Johnson,E0500,1317,Low,3.37
+O0501,"Garner, Nelson and Gonzales",E0501,46285,Medium,3.05
+O0502,"Martin, Washington and Cobb",E0502,14378,Medium,3.83
+O0503,Pham Inc,E0503,29866,Medium,4.36
+O0504,Pham PLC,E0504,38296,Low,4.01
+O0505,"Nixon, Olson and Stephens",E0505,39493,High,3.45
+O0506,Dodson Ltd,E0506,49894,Low,3.13
+O0507,"Hartman, Allen and Andersen",E0507,33718,High,1.23
+O0508,Rasmussen LLC,E0508,44978,High,3.95
+O0509,"Lopez, Gray and Williams",E0509,9903,High,3.1
+O0510,Lambert LLC,E0510,11194,Low,3.31
+O0511,Adams-Hanson,E0511,46405,Medium,1.53
+O0512,"Owens, Nichols and Hernandez",E0512,46491,High,1.15
+O0513,Miller and Sons,E0513,24250,Medium,1.06
+O0514,Russell-Bell,E0514,16583,High,3.38
+O0515,Barrett Ltd,E0515,46272,Medium,3.44
+O0516,Vargas Inc,E0516,26514,Medium,1.18
+O0517,Little Group,E0517,9725,Medium,3.97
+O0518,Haley-Reese,E0518,47848,High,4.17
+O0519,Taylor-Lewis,E0519,21745,High,3.14
+O0520,"Martin, Moore and Brown",E0520,34526,Low,2.05
+O0521,"Madden, Glass and Hardy",E0521,17708,Medium,2.66
+O0522,Palmer LLC,E0522,6612,High,4.27
+O0523,Holloway Inc,E0523,21853,Medium,1.42
+O0524,Daniels Ltd,E0524,18015,Low,2.67
+O0525,Howard and Sons,E0525,19254,Low,2.35
+O0526,Johnson Group,E0526,18866,Low,2.45
+O0527,Carney-Knight,E0527,33464,Medium,1.33
+O0528,Thornton Inc,E0528,47903,High,3.47
+O0529,Crawford-Scott,E0529,14029,High,4.1
+O0530,Larson and Sons,E0530,46658,High,1.77
+O0531,"Haney, Hodge and Butler",E0531,6759,Medium,1.32
+O0532,"Smith, Cross and Adams",E0532,28520,Low,3.75
+O0533,"Huff, Cook and Martin",E0533,31912,High,1.42
+O0534,"Allen, Meyer and Perez",E0534,5446,Low,2.42
+O0535,Galloway Group,E0535,38556,Low,2.25
+O0536,Davis and Sons,E0536,1954,Low,3.37
+O0537,Nichols-Tucker,E0537,48662,High,4.61
+O0538,Blake PLC,E0538,46614,High,1.78
+O0539,Howard-Peterson,E0539,10156,Medium,1.38
+O0540,Smith-Conner,E0540,49208,Low,2.05
+O0541,"Brooks, Rodriguez and Ward",E0541,20440,High,2.55
+O0542,"Prince, Dalton and Jenkins",E0542,31975,Low,4.37
+O0543,Hall Ltd,E0543,14783,Medium,3.37
+O0544,"Romero, Serrano and Macdonald",E0544,30601,Low,4.81
+O0545,Yang and Sons,E0545,42841,Medium,2.09
+O0546,Lynn-Fuentes,E0546,42265,Medium,2.57
+O0547,Ruiz-Butler,E0547,12429,Medium,2.35
+O0548,Owens-Whitaker,E0548,20079,Medium,4.72
+O0549,"Dorsey, Rodriguez and Phillips",E0549,28605,High,4.47
+O0550,Ryan Inc,E0550,15319,Low,2.43
+O0551,"Anderson, Watson and Henderson",E0551,10742,Medium,4.53
+O0552,Johnson-Lopez,E0552,21420,Medium,2.66
+O0553,Berry and Sons,E0553,44720,High,2.6
+O0554,"Irwin, Golden and Miller",E0554,49079,High,3.95
+O0555,Hale Group,E0555,10392,Low,2.38
+O0556,"Martin, Smith and Wright",E0556,2808,Low,3.42
+O0557,Castillo PLC,E0557,6221,High,1.11
+O0558,"Gomez, Shaw and Davis",E0558,5867,Low,4.98
+O0559,Miller Group,E0559,26464,Low,2.72
+O0560,"Thornton, Smith and Eaton",E0560,19349,Medium,4.82
+O0561,Harrison LLC,E0561,43316,Medium,2.48
+O0562,Larson and Sons,E0562,34008,Medium,1.07
+O0563,Edwards and Sons,E0563,11367,Low,2.69
+O0564,"Pennington, Franco and Anderson",E0564,22230,Medium,2.24
+O0565,Strickland Ltd,E0565,34263,High,4.23
+O0566,Blake-Kim,E0566,42982,Medium,4.45
+O0567,Phillips Group,E0567,46007,High,4.73
+O0568,"Bishop, Solis and Williams",E0568,39036,Low,2.94
+O0569,"Franco, Hicks and Boyd",E0569,30621,Low,4.99
+O0570,"Bennett, Romero and Adams",E0570,3405,Medium,3.67
+O0571,Bradley Ltd,E0571,14382,Medium,2.06
+O0572,Miller-Davenport,E0572,33981,Low,4.27
+O0573,"Sullivan, Frye and Jensen",E0573,32428,Low,3.88
+O0574,Smith-Brown,E0574,16962,Low,4.36
+O0575,Ford Inc,E0575,35518,Medium,1.55
+O0576,Holt-Larson,E0576,15941,High,4.5
+O0577,Sellers-Smith,E0577,22074,Low,2.78
+O0578,Barrett-Jacobs,E0578,42103,Medium,3.91
+O0579,Reilly-Wall,E0579,18885,High,3.32
+O0580,"Adams, Pierce and Nguyen",E0580,26893,Low,4.02
+O0581,"Phelps, Fletcher and Fleming",E0581,5267,High,3.56
+O0582,Warren and Sons,E0582,2721,High,3.29
+O0583,"Gonzalez, Walsh and Cox",E0583,45030,Low,2.28
+O0584,Smith-Douglas,E0584,36210,Medium,4.57
+O0585,Wood-Miller,E0585,3567,Low,4.52
+O0586,Smith-Ford,E0586,2187,High,3.14
+O0587,Gonzales Inc,E0587,17471,Low,1.86
+O0588,Scott Group,E0588,42105,High,3.92
+O0589,Valdez-Todd,E0589,7086,Low,2.95
+O0590,Reese PLC,E0590,49892,Medium,4.0
+O0591,Rosales LLC,E0591,11673,High,1.09
+O0592,Adams-Kelly,E0592,21542,Medium,1.21
+O0593,"Moore, Stewart and Ellis",E0593,9108,Medium,4.21
+O0594,"Jordan, Miles and Chen",E0594,21916,Medium,2.87
+O0595,Carpenter and Sons,E0595,33288,Low,4.58
+O0596,Chavez Ltd,E0596,35955,High,2.92
+O0597,"Collins, Li and Morales",E0597,18337,High,1.86
+O0598,"Garcia, Johnson and Stephens",E0598,37660,Medium,4.3
+O0599,Price-Nelson,E0599,47646,Medium,4.52
+O0600,"Fernandez, Trujillo and Gay",E0600,37531,High,1.16
+O0601,Hardy-Nelson,E0601,49112,Low,3.2
+O0602,Dixon Group,E0602,6452,High,2.52
+O0603,Ruiz-Schultz,E0603,25107,Low,1.88
+O0604,Henderson PLC,E0604,34302,Medium,1.48
+O0605,Palmer Ltd,E0605,24616,Low,2.57
+O0606,Gordon-Blanchard,E0606,11896,High,3.52
+O0607,"Flynn, Neal and Ellison",E0607,2726,Low,4.11
+O0608,"Nelson, Mccarty and Garcia",E0608,4351,High,4.68
+O0609,"Kirby, Byrd and Davis",E0609,8786,Medium,2.22
+O0610,Wiggins-Powell,E0610,45842,High,2.33
+O0611,Carrillo Ltd,E0611,15021,Low,3.29
+O0612,Baxter Ltd,E0612,37950,Low,4.99
+O0613,Lopez PLC,E0613,32308,High,3.26
+O0614,"Smith, Cook and Liu",E0614,12900,High,1.57
+O0615,"Craig, Medina and Smith",E0615,38341,Low,2.13
+O0616,Barnes Ltd,E0616,34156,High,1.07
+O0617,Hancock-Mcguire,E0617,46717,Low,1.56
+O0618,Salazar PLC,E0618,32075,High,3.35
+O0619,Lane-Walters,E0619,36326,Low,4.51
+O0620,Bryant-Taylor,E0620,25794,High,1.61
+O0621,Baker-Ramsey,E0621,39611,Medium,3.47
+O0622,Collier-Brown,E0622,33341,Medium,3.06
+O0623,Bean LLC,E0623,42505,High,4.02
+O0624,"Mccarthy, Thompson and Freeman",E0624,32709,High,2.15
+O0625,Williams-Gibson,E0625,11035,Low,3.69
+O0626,Barton-Mendoza,E0626,43562,Medium,4.78
+O0627,Hayes LLC,E0627,13423,Medium,4.12
+O0628,"Gibson, Stewart and Edwards",E0628,4602,Medium,4.15
+O0629,Santos PLC,E0629,40765,High,1.35
+O0630,"Jones, Schneider and Flores",E0630,47779,Medium,2.6
+O0631,"Obrien, Bennett and Martin",E0631,16177,Low,1.44
+O0632,"Blackwell, Richardson and Schmidt",E0632,23477,Medium,3.69
+O0633,Williams-Owens,E0633,13889,High,3.27
+O0634,Campbell Group,E0634,47359,High,3.8
+O0635,Stewart-Gardner,E0635,44075,Medium,4.88
+O0636,Spencer-Gutierrez,E0636,30068,Medium,1.74
+O0637,Copeland-Gillespie,E0637,19793,Medium,2.63
+O0638,Patel Group,E0638,18697,High,3.73
+O0639,"Guerrero, Martinez and Fitzpatrick",E0639,19905,Medium,1.44
+O0640,Campbell-Brandt,E0640,2643,High,4.5
+O0641,Cunningham-Ramos,E0641,30995,Medium,3.85
+O0642,Douglas and Sons,E0642,21357,Low,4.2
+O0643,Perez-Humphrey,E0643,24014,Low,3.04
+O0644,"Hart, Burton and Murillo",E0644,23634,High,4.82
+O0645,"Brown, Mcknight and King",E0645,34048,High,4.69
+O0646,"Clarke, Thompson and Peterson",E0646,25102,Medium,2.47
+O0647,Mason Ltd,E0647,4515,Medium,2.64
+O0648,"Gonzales, Carroll and Patton",E0648,42490,High,1.59
+O0649,Bell LLC,E0649,27676,Low,2.03
+O0650,Sellers Inc,E0650,31041,High,4.98
+O0651,Mendoza-Curry,E0651,40417,Low,2.14
+O0652,"Reynolds, Baker and Haynes",E0652,43716,Low,1.9
+O0653,Graham-Gillespie,E0653,11831,Medium,2.19
+O0654,"Hawkins, Johnston and Pierce",E0654,21876,Medium,1.93
+O0655,Austin and Sons,E0655,14132,High,4.16
+O0656,Hall-Wright,E0656,26092,Low,2.19
+O0657,Hooper LLC,E0657,38083,Low,3.05
+O0658,Williams Inc,E0658,9714,Low,1.25
+O0659,Lewis-Wagner,E0659,7036,Low,2.82
+O0660,Jacobs-Murphy,E0660,42634,High,3.2
+O0661,"Rocha, Joseph and Roberts",E0661,39367,High,2.08
+O0662,Henderson LLC,E0662,39801,Medium,2.92
+O0663,"Davis, Odonnell and Deleon",E0663,10789,Medium,2.03
+O0664,"Edwards, Figueroa and Yang",E0664,33636,Medium,2.18
+O0665,Taylor Ltd,E0665,41125,Low,1.87
+O0666,Bradley and Sons,E0666,25356,High,4.82
+O0667,"Myers, Wood and Franklin",E0667,14893,High,2.19
+O0668,Larson PLC,E0668,18074,High,4.31
+O0669,Nunez Group,E0669,37811,High,4.27
+O0670,"Lowe, Flowers and Lee",E0670,28076,High,1.83
+O0671,"Parker, Collins and Lyons",E0671,11616,Medium,4.39
+O0672,Fox Ltd,E0672,9434,High,4.55
+O0673,Cooper-Townsend,E0673,8554,Medium,1.38
+O0674,Chavez-Colon,E0674,40780,Low,3.21
+O0675,Moran PLC,E0675,21166,Medium,3.48
+O0676,"Smith, Brewer and Price",E0676,34073,Low,4.84
+O0677,Kim-Jacobs,E0677,1832,Medium,2.26
+O0678,Watson-Chavez,E0678,45582,Low,1.54
+O0679,Hudson-Robertson,E0679,26958,High,1.49
+O0680,"Silva, Chandler and Morales",E0680,24932,Medium,2.7
+O0681,Mathews LLC,E0681,44482,High,4.95
+O0682,"Keller, Evans and Melendez",E0682,38704,High,1.77
+O0683,Fox-Lyons,E0683,2606,Low,4.77
+O0684,Moore-Jones,E0684,7020,Medium,2.88
+O0685,Mccoy Ltd,E0685,33281,High,4.48
+O0686,"Williams, Ritter and Kelly",E0686,48489,Low,3.7
+O0687,Young-Allison,E0687,26296,Medium,2.53
+O0688,Henderson-Jackson,E0688,17423,Low,4.11
+O0689,Martinez LLC,E0689,15319,Low,3.59
+O0690,Terry-Ayala,E0690,31439,High,1.65
+O0691,Jordan-Lewis,E0691,17838,Medium,3.21
+O0692,Mason-Harris,E0692,6915,Medium,1.42
+O0693,Paul Group,E0693,42802,High,3.1
+O0694,"Soto, Giles and White",E0694,36165,Medium,3.88
+O0695,"Young, Lozano and Browning",E0695,39426,High,4.95
+O0696,Dennis-Burnett,E0696,12612,Low,4.32
+O0697,Barton PLC,E0697,46404,Medium,2.43
+O0698,"Castro, Bruce and Hall",E0698,43285,High,3.82
+O0699,Moore Inc,E0699,13234,Low,4.46
+O0700,"Baker, Garcia and Gallagher",E0700,19622,High,4.77
+O0701,Jackson and Sons,E0701,37167,Low,1.33
+O0702,"Garrison, Coleman and Contreras",E0702,17877,Low,1.75
+O0703,Valenzuela Inc,E0703,24409,Medium,4.67
+O0704,Christian-Foster,E0704,39752,High,3.35
+O0705,Alvarez-Myers,E0705,21814,Medium,3.19
+O0706,Bell PLC,E0706,40348,Low,4.69
+O0707,Marshall-Garner,E0707,4402,High,4.38
+O0708,"Baker, Smith and Schmidt",E0708,48353,Low,1.67
+O0709,Sullivan-Wilson,E0709,30992,Low,3.78
+O0710,"Sanchez, Hill and Vaughn",E0710,47672,High,1.74
+O0711,West Ltd,E0711,43702,High,3.09
+O0712,"Mccoy, Lawson and Turner",E0712,33407,Low,3.52
+O0713,Kim LLC,E0713,22437,Medium,4.62
+O0714,Fernandez-Beck,E0714,28041,High,3.48
+O0715,Hill LLC,E0715,11959,Medium,3.05
+O0716,Schmidt-Mitchell,E0716,1853,High,2.56
+O0717,"Willis, Swanson and Barnett",E0717,34717,Medium,3.27
+O0718,Douglas PLC,E0718,35324,High,2.97
+O0719,Wilson PLC,E0719,3382,Low,3.01
+O0720,"Conrad, Miller and Young",E0720,18052,High,3.0
+O0721,Mcdonald LLC,E0721,48306,High,2.79
+O0722,"Ryan, Porter and Cox",E0722,47192,Medium,2.78
+O0723,"Burns, Moore and Williams",E0723,29735,Low,4.54
+O0724,Smith Inc,E0724,46619,High,2.35
+O0725,"Barrett, Chen and Wilcox",E0725,18206,Low,4.51
+O0726,Avila-Butler,E0726,33087,High,3.36
+O0727,Hernandez Inc,E0727,21704,High,2.2
+O0728,Hughes Ltd,E0728,11764,Low,1.87
+O0729,Hayes-Everett,E0729,47248,High,2.07
+O0730,Gardner-Adkins,E0730,22643,Medium,1.8
+O0731,Young-Velez,E0731,32800,High,1.42
+O0732,Lee Group,E0732,37131,Low,2.62
+O0733,"Watson, Hunter and Robinson",E0733,30001,Medium,3.01
+O0734,"Green, Holder and Sandoval",E0734,1649,Low,2.11
+O0735,Perkins-Padilla,E0735,34693,Medium,3.63
+O0736,Alexander-Webster,E0736,22056,High,4.92
+O0737,Hansen PLC,E0737,45457,High,2.09
+O0738,Mccormick-Allen,E0738,47561,Low,4.66
+O0739,Hardy Inc,E0739,33249,Low,2.88
+O0740,Smith-Duke,E0740,28198,Medium,4.81
+O0741,Flores Inc,E0741,21233,Medium,4.66
+O0742,Ray-Huber,E0742,22125,High,2.51
+O0743,Ellis PLC,E0743,37307,Low,4.14
+O0744,Lee Ltd,E0744,31507,High,1.4
+O0745,Carter-Williams,E0745,38411,Medium,1.58
+O0746,Hampton Ltd,E0746,40291,Medium,2.97
+O0747,George PLC,E0747,37882,High,2.17
+O0748,Howard-Benson,E0748,18383,Low,3.1
+O0749,Cooper and Sons,E0749,36269,High,2.6
+O0750,Martinez-Thompson,E0750,13948,Low,1.21
+O0751,Hall PLC,E0751,48478,High,3.53
+O0752,"Bradley, Perry and Henderson",E0752,21392,Low,3.96
+O0753,Carter Inc,E0753,17964,Medium,4.78
+O0754,"Green, Taylor and Hamilton",E0754,46408,Low,3.19
+O0755,Mckinney-Jones,E0755,26810,Low,3.12
+O0756,Williams Inc,E0756,12564,Medium,2.69
+O0757,Osborne LLC,E0757,39054,Medium,2.41
+O0758,Dixon Group,E0758,2238,Low,1.59
+O0759,"Farrell, Ellis and Edwards",E0759,47077,Low,4.79
+O0760,Richardson Ltd,E0760,15805,High,3.41
+O0761,Stark-Nelson,E0761,34942,Low,1.9
+O0762,"Hughes, Kim and Mcguire",E0762,3342,Low,4.62
+O0763,"Lucero, Weber and Garcia",E0763,36897,High,4.02
+O0764,Moore Ltd,E0764,44167,Medium,3.93
+O0765,Sparks Group,E0765,27992,High,4.74
+O0766,"Reyes, Todd and Owens",E0766,4899,Low,2.68
+O0767,Brooks Inc,E0767,34728,Low,4.75
+O0768,"Cook, Webster and Bright",E0768,34886,Medium,1.88
+O0769,"Greene, Hill and Lopez",E0769,20990,Low,1.52
+O0770,Pierce Inc,E0770,28699,High,3.88
+O0771,Mcmahon-Coleman,E0771,45973,Medium,2.88
+O0772,Smith Group,E0772,34584,High,1.32
+O0773,"Shepard, Baird and Mccormick",E0773,4932,High,3.2
+O0774,Collins-Logan,E0774,36227,High,1.74
+O0775,Cole-Barrett,E0775,47597,Medium,1.81
+O0776,Wallace-Chapman,E0776,22961,Low,4.16
+O0777,Coleman Ltd,E0777,20013,High,2.96
+O0778,Gallagher and Sons,E0778,17428,High,4.49
+O0779,"Long, Ball and Ferguson",E0779,21270,High,3.57
+O0780,Robinson-Crawford,E0780,1992,Medium,4.86
+O0781,"Johnson, Cruz and Mcgee",E0781,11219,Medium,3.07
+O0782,"Wise, Norman and Wade",E0782,11481,Medium,1.29
+O0783,Davis Ltd,E0783,32915,High,1.24
+O0784,"Coleman, Harris and Vargas",E0784,17755,Medium,3.78
+O0785,Beard PLC,E0785,45227,High,1.26
+O0786,Bailey Ltd,E0786,36488,Low,3.19
+O0787,Parker Group,E0787,5070,Low,4.72
+O0788,"Smith, Martinez and Hess",E0788,27958,High,2.23
+O0789,"Thompson, Park and Wade",E0789,31747,High,3.22
+O0790,"White, Diaz and Mejia",E0790,3532,Medium,1.61
+O0791,Campbell-Harris,E0791,32727,Low,3.25
+O0792,Kelly and Sons,E0792,2122,High,4.77
+O0793,Howell-Arnold,E0793,29244,High,3.14
+O0794,Harris LLC,E0794,17532,Medium,1.14
+O0795,Reynolds LLC,E0795,10486,High,2.92
+O0796,Russell and Sons,E0796,2111,High,2.14
+O0797,Porter-Schaefer,E0797,34287,Low,4.9
+O0798,"Barton, Cook and Mendoza",E0798,48784,High,4.15
+O0799,"Hall, Park and Weber",E0799,16034,High,4.02
+O0800,Castaneda-Long,E0800,31335,Medium,4.61
+O0801,"Gonzalez, Moore and Caldwell",E0801,36325,Medium,1.36
+O0802,"Day, Johnson and Sanders",E0802,13215,High,3.42
+O0803,"Washington, Brooks and Collins",E0803,40836,Medium,3.13
+O0804,Hernandez Inc,E0804,21459,Medium,3.81
+O0805,Oconnor Group,E0805,27848,High,1.43
+O0806,"Rodriguez, Garcia and Roberts",E0806,30451,Medium,3.78
+O0807,"Jenkins, Pham and Smith",E0807,27248,High,3.21
+O0808,Wilcox-Garcia,E0808,44592,High,4.41
+O0809,Medina-Campbell,E0809,14335,High,2.95
+O0810,Campbell-Wong,E0810,13705,High,3.73
+O0811,"Morris, Johnson and Johnson",E0811,47566,Low,2.76
+O0812,Hughes-Rose,E0812,14863,Low,3.58
+O0813,Rojas-Mcintyre,E0813,49675,High,2.34
+O0814,Williams PLC,E0814,40596,Low,3.47
+O0815,"Robertson, Strickland and Wallace",E0815,32979,High,2.88
+O0816,Williams-Hill,E0816,33036,Medium,3.12
+O0817,Nielsen-Stafford,E0817,13952,Medium,4.17
+O0818,Bartlett Inc,E0818,25689,High,1.17
+O0819,Roth-Mack,E0819,4533,High,2.91
+O0820,Baird Inc,E0820,47718,High,4.42
+O0821,"Reyes, Grant and Stewart",E0821,21466,Low,4.4
+O0822,"Williams, Rogers and Garcia",E0822,20281,Low,1.2
+O0823,Cabrera-Johnson,E0823,2534,Medium,1.49
+O0824,Ross-Hinton,E0824,41284,High,3.36
+O0825,Thompson Ltd,E0825,41499,Low,4.51
+O0826,"Huff, Adams and Miller",E0826,15342,Low,2.36
+O0827,Elliott-Rios,E0827,1356,Low,1.97
+O0828,"Johnson, Flores and Nguyen",E0828,15580,Medium,3.11
+O0829,Reed and Sons,E0829,18247,Medium,3.1
+O0830,Torres and Sons,E0830,4995,High,2.98
+O0831,Malone PLC,E0831,35900,High,3.84
+O0832,"Rosales, Cooper and Carter",E0832,34832,High,3.05
+O0833,"Anderson, Reyes and Mcclure",E0833,39510,Low,3.66
+O0834,Davis LLC,E0834,27887,Low,3.11
+O0835,Bray LLC,E0835,24883,High,4.11
+O0836,"Perez, Ritter and Stanton",E0836,23369,Low,4.65
+O0837,Wells-Roach,E0837,23795,High,2.31
+O0838,Larson-Mccarty,E0838,31894,High,2.61
+O0839,Williams-Schmidt,E0839,47637,High,4.19
+O0840,Gardner-Anderson,E0840,13713,Low,2.32
+O0841,Wilson-Gonzales,E0841,39977,High,4.98
+O0842,Williams Ltd,E0842,7770,Low,4.78
+O0843,Higgins Inc,E0843,33913,Medium,4.85
+O0844,Moore-Estes,E0844,34273,Medium,2.29
+O0845,Jones and Sons,E0845,20448,Medium,2.41
+O0846,"Luna, Lang and Porter",E0846,47134,High,3.39
+O0847,"Hale, Kidd and Berry",E0847,27765,Medium,4.44
+O0848,"Anderson, Wells and Day",E0848,7345,High,1.66
+O0849,Morrison-Miles,E0849,7899,Low,1.06
+O0850,Smith Ltd,E0850,6934,High,4.03
+O0851,Stanley-Green,E0851,32704,Low,1.63
+O0852,"Lee, Guerrero and Brooks",E0852,31056,High,4.24
+O0853,"Johnson, Shepherd and Smith",E0853,47690,High,3.72
+O0854,Burgess Group,E0854,34582,Low,1.79
+O0855,"Smith, Hernandez and Higgins",E0855,10489,High,2.32
+O0856,Warner Group,E0856,3617,Low,1.42
+O0857,Hayes-Sweeney,E0857,34168,High,3.84
+O0858,"Smith, Wright and Simmons",E0858,49135,Low,2.05
+O0859,"Fuentes, Jones and Ballard",E0859,45316,Medium,2.81
+O0860,Kaufman-Ramsey,E0860,45124,High,3.89
+O0861,Bennett and Sons,E0861,41444,High,4.76
+O0862,Anderson-Huang,E0862,36328,Medium,3.36
+O0863,"House, Gill and Clay",E0863,29669,Medium,4.27
+O0864,Thomas-Adams,E0864,12182,High,3.9
+O0865,Meyer Group,E0865,31030,Low,1.3
+O0866,Lopez-Ward,E0866,2439,Low,1.74
+O0867,Serrano Inc,E0867,1425,Medium,2.06
+O0868,Wilson-Hardin,E0868,10346,High,2.99
+O0869,"Simpson, Palmer and Gonzalez",E0869,12515,Medium,2.51
+O0870,"Davis, Lee and Davis",E0870,18436,High,4.14
+O0871,Moore-Taylor,E0871,49890,Medium,2.79
+O0872,Peterson-Ross,E0872,28245,High,1.73
+O0873,"Hill, Hamilton and Jackson",E0873,12885,Low,3.56
+O0874,"Butler, Gibson and Webster",E0874,45054,Medium,4.46
+O0875,Potts LLC,E0875,9823,Low,3.12
+O0876,Mckee Group,E0876,27563,Low,3.3
+O0877,Williams-Mendoza,E0877,20866,High,3.27
+O0878,Nguyen-Wright,E0878,44383,Low,1.89
+O0879,Cabrera Group,E0879,49502,High,3.26
+O0880,Marshall Ltd,E0880,25191,Low,4.06
+O0881,Walton PLC,E0881,35951,High,2.22
+O0882,Wall-Nelson,E0882,31571,High,3.46
+O0883,"Wiggins, Olson and Smith",E0883,3257,Low,2.2
+O0884,Mcgrath-King,E0884,36522,High,3.66
+O0885,"Bryant, Moses and Smith",E0885,19570,Medium,2.36
+O0886,Miller LLC,E0886,5526,Medium,4.47
+O0887,Chavez-Phillips,E0887,42573,Medium,3.26
+O0888,"Rodriguez, Carson and Fleming",E0888,5295,Medium,2.55
+O0889,"Alexander, Cunningham and Ortiz",E0889,20193,High,2.58
+O0890,"Lawson, Salazar and Hamilton",E0890,3350,Medium,1.53
+O0891,Leonard-Vargas,E0891,33294,Low,1.25
+O0892,Ruiz-Mills,E0892,20050,Medium,4.61
+O0893,Vang-Barker,E0893,27758,High,1.28
+O0894,"Bauer, Cervantes and Norton",E0894,42007,Medium,2.42
+O0895,"Farmer, Gonzalez and Fleming",E0895,44013,Low,1.67
+O0896,Kirby Ltd,E0896,29310,High,1.7
+O0897,Chapman LLC,E0897,44840,Low,4.56
+O0898,Harmon PLC,E0898,32830,Low,4.14
+O0899,"Brown, Mayo and Dennis",E0899,49028,Low,4.02
+O0900,Henry Ltd,E0900,45378,Low,4.95
+O0901,Cobb-Taylor,E0901,18479,High,1.37
+O0902,Duran-Reid,E0902,31049,High,3.99
+O0903,"Weaver, Lawrence and Callahan",E0903,1582,Medium,1.44
+O0904,Lopez-Aguilar,E0904,25096,Medium,2.91
+O0905,"Torres, Shepherd and Jones",E0905,35143,High,1.07
+O0906,"Fleming, Gonzalez and Wise",E0906,24439,Medium,4.25
+O0907,"Nelson, Turner and Turner",E0907,28649,Medium,2.48
+O0908,"Travis, Bowman and Brown",E0908,24365,Low,3.91
+O0909,Hinton-Rodriguez,E0909,1891,Low,4.69
+O0910,Beasley-Foley,E0910,40068,Medium,1.02
+O0911,Palmer-Schmidt,E0911,24966,Medium,1.98
+O0912,Hall LLC,E0912,31174,Medium,4.28
+O0913,"Reyes, Cabrera and Oconnor",E0913,33266,High,3.77
+O0914,Martinez-Rivera,E0914,38443,High,1.1
+O0915,Thomas-Maxwell,E0915,15080,Low,4.5
+O0916,Thompson-Thomas,E0916,2416,Medium,3.68
+O0917,Hayes-Obrien,E0917,35264,High,1.62
+O0918,"Banks, Jones and Krause",E0918,10781,Low,3.53
+O0919,Cruz-Young,E0919,37042,Low,3.13
+O0920,"Williams, Davis and Peck",E0920,9472,High,2.35
+O0921,"Long, Strong and Santana",E0921,9855,Low,2.45
+O0922,"Delacruz, Dominguez and Valencia",E0922,29954,Low,1.27
+O0923,Holt-Salazar,E0923,46491,Low,1.96
+O0924,Gregory and Sons,E0924,41235,Low,4.4
+O0925,Mckay and Sons,E0925,9562,High,3.5
+O0926,Kelly Group,E0926,15276,Medium,2.6
+O0927,Madden Group,E0927,26764,Medium,1.51
+O0928,"Ruiz, Randall and Mitchell",E0928,1457,Low,1.03
+O0929,Simon-Montgomery,E0929,33569,Medium,4.95
+O0930,Simmons-Pratt,E0930,6756,Low,2.79
+O0931,Carter-Trujillo,E0931,30676,Low,3.63
+O0932,Chan Inc,E0932,43118,Low,4.63
+O0933,"French, Williams and Woods",E0933,24399,Medium,4.16
+O0934,Best Inc,E0934,16305,Low,2.85
+O0935,Grant Ltd,E0935,13538,High,4.01
+O0936,"Parker, Mcmahon and Schwartz",E0936,24803,Low,3.43
+O0937,Hutchinson and Sons,E0937,48322,High,4.88
+O0938,Sanchez-Sims,E0938,47274,Low,2.17
+O0939,Cole and Sons,E0939,22504,High,1.83
+O0940,Moore PLC,E0940,30599,Low,1.91
+O0941,Ortega Group,E0941,13014,Low,1.82
+O0942,Clements-Griffin,E0942,42394,High,1.16
+O0943,Parker-Dodson,E0943,36320,Medium,1.84
+O0944,"Townsend, Patterson and Martin",E0944,14807,Low,2.05
+O0945,Stewart-Doyle,E0945,29464,Low,4.23
+O0946,Mcdaniel-Cohen,E0946,15475,Low,2.83
+O0947,Harper-Lamb,E0947,28310,High,3.98
+O0948,"Kelly, Green and Kramer",E0948,20402,Medium,3.89
+O0949,Hernandez-Smith,E0949,4344,Medium,4.38
+O0950,"Ortega, Miles and Holden",E0950,24000,Low,3.58
+O0951,Lopez-Parsons,E0951,24699,High,4.28
+O0952,Ramirez-Murray,E0952,30648,Medium,3.83
+O0953,Barber Group,E0953,20111,Medium,1.02
+O0954,Bennett PLC,E0954,5738,Medium,1.7
+O0955,Newman-Phillips,E0955,44017,Medium,1.83
+O0956,"Murray, Malone and Johnson",E0956,41116,Medium,1.06
+O0957,"Gibson, Valdez and Dennis",E0957,15109,Low,4.46
+O0958,"Rogers, Stewart and Schwartz",E0958,7024,Medium,3.59
+O0959,Waters and Sons,E0959,19721,High,3.47
+O0960,"Nguyen, Hamilton and Marks",E0960,22618,High,4.18
+O0961,"Miller, Frank and Compton",E0961,12563,High,3.38
+O0962,"Moore, Gibbs and Henderson",E0962,14038,High,3.49
+O0963,"Frazier, Vasquez and Rodriguez",E0963,4263,Medium,1.25
+O0964,"Leonard, Sloan and Harvey",E0964,1388,Medium,4.76
+O0965,Cooper-Fox,E0965,8411,Medium,4.24
+O0966,"Banks, Bartlett and Griffin",E0966,46348,Low,4.84
+O0967,Brown-Larsen,E0967,19585,Medium,4.94
+O0968,"Davis, Baker and Turner",E0968,29507,Low,3.81
+O0969,"Patel, Ford and Griffin",E0969,46146,Low,1.87
+O0970,Tapia-Kaiser,E0970,15741,Low,3.09
+O0971,"Bell, Lewis and Nelson",E0971,11058,Medium,3.63
+O0972,Tran PLC,E0972,13342,High,4.98
+O0973,"Gallegos, Johnson and Wood",E0973,24389,Low,3.49
+O0974,"Sellers, Bridges and Lee",E0974,3226,High,2.96
+O0975,Jimenez-Santiago,E0975,2900,High,4.49
+O0976,Stone Group,E0976,26698,High,4.21
+O0977,Berg-Finley,E0977,18380,Medium,1.44
+O0978,"Hancock, Fields and Sanchez",E0978,19442,Medium,1.48
+O0979,"Evans, Potts and White",E0979,30521,Low,4.16
+O0980,Baker-King,E0980,11416,Low,1.16
+O0981,Wall-Griffin,E0981,1008,High,4.4
+O0982,"Holmes, Johnson and Morrow",E0982,45614,Low,4.11
+O0983,Gardner Ltd,E0983,20620,High,3.68
+O0984,"Baker, Lewis and Gilmore",E0984,40237,Medium,4.03
+O0985,Warren-Schroeder,E0985,28581,Medium,3.19
+O0986,Lopez-Moore,E0986,37272,Medium,2.68
+O0987,Ford LLC,E0987,34208,Low,4.49
+O0988,"Allen, Gonzalez and Boyd",E0988,42060,Low,3.91
+O0989,"Pena, Charles and Parker",E0989,28349,High,1.11
+O0990,"Donaldson, Goodman and Lewis",E0990,23196,Low,2.53
+O0991,Williams Ltd,E0991,38299,High,2.92
+O0992,"Duncan, Rodriguez and Ward",E0992,37949,High,2.29
+O0993,"Brown, Martin and Ford",E0993,15048,High,4.73
+O0994,Jones PLC,E0994,5371,Medium,2.35
+O0995,"Murray, Briggs and Morgan",E0995,46156,Low,2.63
+O0996,"Henderson, Morrison and Johnson",E0996,18188,High,3.1
+O0997,"Thompson, Richardson and Brown",E0997,10396,Low,3.52
+O0998,"Gomez, Anderson and Campbell",E0998,9468,High,3.56
+O0999,"Martinez, King and Boyd",E0999,34708,Low,2.63
+O1000,Willis-Thomas,E1000,44352,Low,1.38

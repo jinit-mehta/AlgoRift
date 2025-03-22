@@ -1,189 +1,138 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, recall_score, f1_score
+from multiprocessing import Pool
+from random import uniform
 import time
-from multiprocessing import Pool, cpu_count
 
-# Configuration
-MAX_FRIENDS = 20
-TOP_K_SIMILAR_USERS = 10
-LOCATION_WEIGHT = 0.3
-CHUNK_SIZE = 10000  # Process data in chunks to avoid memory overload
+# Constants
+WEIGHTS = {"location": 0.5, "prefs": 0.3, "collab": 0.2}
+CITIES = ["New York", "London", "Tokyo", "Sydney", "Paris", "Berlin", "Toronto", "Mumbai", "São Paulo", "Cape Town",
+          "Los Angeles", "Shanghai", "Singapore", "Dubai", "Moscow", "Mexico City", "Bangkok", "Istanbul", "Seoul", "Madrid"]
 
-def recommend_events_simplified(user_id, train_df, events_df, users_df, user_friends_df, num_recommendations=5):
-    """
-    Simplified recommendation function with optimizations.
-    """
-    user_id = str(user_id)
-    print(f"Generating recommendations for user {user_id}")
+def load_data():
+    return (pd.read_csv("data/users.csv"), pd.read_csv("data/events.csv"), 
+            pd.read_csv("data/bookings.csv"), pd.read_csv("data/organizers.csv"))
 
-    # 1. Get events the user has already interacted with
-    user_events = set(train_df[train_df['user'] == user_id]['event'].astype(str))
-    if not user_events:
-        print(f"User {user_id} has no event interactions")
+def preprocess_data(users_df, events_df, bookings_df):
+    # Parse list columns
+    users_df["preferences"] = users_df["preferences"].apply(eval)
+    users_df["social_connections"] = users_df["social_connections"].apply(eval)
+    users_df["attended_events"] = users_df["attended_events"].apply(eval)
+    users_df["city"] = users_df["location"].apply(lambda x: x.split(",")[0].strip())
+    events_df["city"] = events_df["location"].apply(lambda x: x.split(",")[0].strip())
+    events_df["date"] = pd.to_datetime(events_df["date"])
+    
+    # Precompute user interests, history, and collaborative data
+    user_interests = bookings_df[bookings_df["interested"] == 1].groupby("user_id")["event_id"].apply(set).to_dict()
+    user_history = bookings_df.groupby("user_id")["event_id"].apply(set).to_dict()
+    event_users = bookings_df.groupby("event_id")["user_id"].apply(set).to_dict()
+    event_categories = events_df.set_index("event_id")["category"].to_dict()
+    
+    return users_df, events_df, user_interests, user_history, event_users, event_categories
 
-    # 2. Get user's location
-    user_location = None
-    if user_id in users_df['user_id'].astype(str).values:
-        user_location = users_df[users_df['user_id'].astype(str) == user_id]['location'].iloc[0]
-        if pd.isna(user_location) or user_location == '':
-            user_location = None
+def collab_filtering(user_id, users_df, user_interests, user_history, event_users, event_categories):
+    user = users_df[users_df["user_id"] == user_id].iloc[0]
+    attended = user_history.get(user_id, set())
+    friends = user["social_connections"]
+    
+    # Collaborative events from past attendance and friend interests
+    collab_events = set()
+    for event in attended:
+        collab_events.update(event_users.get(event, set()))
+    for friend in friends:
+        collab_events.update(user_interests.get(friend, set()))
+    
+    # Map to categories of interest
+    interested_categories = {event_categories.get(e) for e in user_interests.get(user_id, set()) if e in event_categories}
+    return interested_categories
 
-    # 3. Get user's friends
-    user_friends = []
-    if user_id in user_friends_df['user'].astype(str).values:
-        friends_row = user_friends_df[user_friends_df['user'].astype(str) == user_id]['friends'].iloc[0]
-        if isinstance(friends_row, str) and friends_row.strip():
-            user_friends = friends_row.split()[:MAX_FRIENDS]
+def recommend_events(user_id, users_df, events_df, user_interests, user_history, event_users, event_categories):
+    user = users_df[users_df["user_id"] == user_id].iloc[0]
+    user_city, user_prefs = user["city"], user["preferences"]
+    exploration_score = user["exploration_score"]
+    attended = user_history.get(user_id, set())
+    collab_categories = collab_filtering(user_id, users_df, user_interests, user_history, event_users, event_categories)
+    
+    # Filter to future events
+    future_events = events_df[events_df["date"] > pd.Timestamp("today")]
+    
+    # Vectorized scoring
+    loc_scores = (future_events["city"] == user_city).astype(int)
+    pref_scores = future_events["category"].isin(user_prefs).astype(int)
+    collab_scores = future_events["category"].isin(collab_categories).astype(int)
+    scores = (WEIGHTS["location"] * loc_scores + 
+              WEIGHTS["prefs"] * pref_scores + 
+              WEIGHTS["collab"] * collab_scores)
+    
+    # Exploration factor
+    explore_mask = (pref_scores == 0) & (np.random.uniform(0, 1, len(future_events)) < exploration_score)
+    scores += explore_mask * 0.1
+    
+    # Recommend top 5 un-attended future events
+    mask = ~future_events["event_id"].isin(attended)
+    top_indices = scores[mask].argsort()[-5:][::-1]
+    return future_events["event_id"][mask].iloc[top_indices].tolist()
 
-    # Create a scoring dictionary for candidate events
-    event_scores = {}
+def evaluate_recommendations(user_id, recommendations, events_df, user_interests, event_categories):
+    # Simulate future interest based on past interested categories
+    interested_categories = {event_categories.get(e) for e in user_interests.get(user_id, set()) if e in event_categories}
+    future_events = events_df[events_df["date"] > pd.Timestamp("today")]
+    actual = set(future_events[future_events["category"].isin(interested_categories)]["event_id"])
+    
+    predicted = set(recommendations)
+    if not actual or not predicted:
+        return 0, 0, 0
+    y_true = [1 if e in actual else 0 for e in predicted]
+    y_pred = [1] * len(predicted)
+    return (precision_score(y_true, y_pred, zero_division=0),
+            recall_score(y_true, y_pred, zero_division=0),
+            f1_score(y_true, y_pred, zero_division=0))
 
-    # 4. Score events based on friends' attendance
-    if user_friends:
-        friend_events = train_df[
-            (train_df['user'].astype(str).isin(user_friends)) &
-            (train_df['interested'] == 1)
-        ]['event'].astype(str)
+def organizer_insights(events_df, bookings_df, organizers_df):
+    event_stats = bookings_df.groupby("event_id").agg({
+        "total_price": "sum",
+        "ticket_quantity": "sum",
+        "rating": "mean"
+    }).reset_index()
+    insights = pd.merge(events_df[["event_id", "name", "popularity_score", "city"]], event_stats, on="event_id")
+    insights = pd.merge(insights, organizers_df[["event_id", "pricing_strategy"]], on="event_id")
+    return insights.rename(columns={"name": "event_name"})
 
-        for event, count in friend_events.value_counts().items():
-            if event not in user_events:  # Don't recommend events user already interacted with
-                # Higher score for events more friends attended
-                event_scores[event] = event_scores.get(event, 0) + (count / len(user_friends)) * 0.6
-
-    # 5. Score events based on location match
-    if user_location and not pd.isna(user_location):
-        user_location_lower = user_location.lower()
-
-        # Process events in chunks
-        for i in range(0, len(events_df), CHUNK_SIZE):
-            events_chunk = events_df.iloc[i:i+CHUNK_SIZE]
-
-            for _, event in events_chunk.iterrows():
-                event_id = str(event['event_id'])
-
-                # Skip events user already interacted with
-                if event_id in user_events:
-                    continue
-
-                # Check for location match
-                event_city = str(event['city']).lower() if not pd.isna(event['city']) else ""
-                event_country = str(event['country']).lower() if not pd.isna(event['country']) else ""
-
-                location_score = 0
-                if event_city and event_city in user_location_lower:
-                    location_score = 0.8
-                elif event_country and event_country in user_location_lower:
-                    location_score = 0.4
-
-                if location_score > 0:
-                    event_scores[event_id] = event_scores.get(event_id, 0) + location_score * LOCATION_WEIGHT
-
-    # 6. Add a simple collaborative filtering component
-    if len(user_events) > 0:
-        # Get users who attended the same events
-        similar_users = train_df[
-            (train_df['event'].astype(str).isin(user_events)) &
-            (train_df['interested'] == 1) &
-            (train_df['user'].astype(str) != user_id)
-        ]['user'].astype(str)
-
-        # Count event overlap to find most similar users
-        similar_user_counts = similar_users.value_counts().head(TOP_K_SIMILAR_USERS)
-
-        # For each similar user, find events they liked
-        for similar_user, count in similar_user_counts.items():
-            similarity = count / len(user_events)  # Simple similarity score
-
-            # Get events the similar user liked
-            similar_user_events = train_df[
-                (train_df['user'].astype(str) == similar_user) &
-                (train_df['interested'] == 1)
-            ]['event'].astype(str)
-
-            # Score events from similar users
-            for event in similar_user_events:
-                if event not in user_events:
-                    event_scores[event] = event_scores.get(event, 0) + similarity * 0.5
-
-    # Convert scores to DataFrame and sort
-    if not event_scores:
-        print("No recommendations found")
-        return pd.DataFrame(columns=['event_id', 'score'])
-
-    recommendations = pd.DataFrame({
-        'event_id': list(event_scores.keys()),
-        'score': list(event_scores.values())
-    })
-
-    # Sort and take top recommendations
-    recommendations = recommendations.sort_values('score', ascending=False).head(num_recommendations)
-
-    return recommendations
-
-def generate_recommendations_batch(user_ids, train_df, events_df, users_df, user_friends_df, num_recommendations=5):
-    """Generate recommendations for a batch of users in parallel"""
-    all_recommendations = []
-
-    # Use multiprocessing to parallelize recommendations
-    with Pool(cpu_count()) as pool:
-        results = pool.starmap(
-            recommend_events_simplified,
-            [(user_id, train_df, events_df, users_df, user_friends_df, num_recommendations) for user_id in user_ids]
-        )
-
-    # Combine results
-    for recs in results:
-        if not recs.empty:
-            recs['user_id'] = user_id
-            all_recommendations.append(recs)
-
-    if all_recommendations:
-        final_recommendations = pd.concat(all_recommendations, ignore_index=True)
-        final_recommendations = final_recommendations[['user_id', 'event_id', 'score']]
-        return final_recommendations
-    else:
-        return pd.DataFrame(columns=['user_id', 'event_id', 'score'])
-
-# Main function to run the recommendation system
-def run_simple_recommendation_system():
-    print("Running simplified recommendation system")
-
-    print("Loading data...")
-    # Load data with optimized approach
-    events_cols = ['event_id', 'city', 'country']
-    users_cols = ['user_id', 'location']
-    user_friends_cols = ['user', 'friends']
-    train_cols = ['user', 'event', 'interested']
-
-    # Load the data with only needed columns
-    events = pd.read_csv("/content/drive/MyDrive/d2k/events.csv", usecols=events_cols)
-    users = pd.read_csv("/content/drive/MyDrive/d2k/users.csv", usecols=users_cols)
-    user_friends = pd.read_csv("/content/drive/MyDrive/d2k/user_friends.csv", usecols=user_friends_cols)
-    train = pd.read_csv("/content/drive/MyDrive/d2k/train.csv", usecols=train_cols)
-
-    # Convert IDs to string for consistency
-    events['event_id'] = events['event_id'].astype(str)
-    users['user_id'] = users['user_id'].astype(str)
-    train['user'] = train['user'].astype(str)
-    train['event'] = train['event'].astype(str)
-    user_friends['user'] = user_friends['user'].astype(str)
-
-    # Generate recommendations for a small sample of users
-    sample_users = train['user'].unique()[:50]  # Take just 50 users for quick testing
-
-    print(f"Generating recommendations for {len(sample_users)} users")
-    recommendations = generate_recommendations_batch(
-        sample_users, train, events, users, user_friends
-    )
-
-    print(f"Generated {len(recommendations)} recommendations for {recommendations['user_id'].nunique()} users")
-    print(recommendations.head())
-
-    # Optionally save to CSV
-    recommendations.to_csv("simple_recommendations.csv", index=False)
-
-    return recommendations
+def parallel_recommendations(args):
+    user_id, users_df, events_df, user_interests, user_history, event_users, event_categories = args
+    return user_id, recommend_events(user_id, users_df, events_df, user_interests, user_history, event_users, event_categories)
 
 if __name__ == "__main__":
-    run_simple_recommendation_system()
+    start_time = time.time()
+    
+    # Load and preprocess
+    print("Loading and preprocessing data...")
+    users_df, events_df, bookings_df, organizers_df = load_data()
+    users_df, events_df, user_interests, user_history, event_users, event_categories = preprocess_data(users_df, events_df, bookings_df)
+    
+    # Split data (for reference, not used in evaluation here)
+    print("Splitting data...")
+    train_bookings, test_bookings = train_test_split(bookings_df, test_size=0.2, random_state=42)
+    
+    # Generate recommendations
+    print("Generating recommendations...")
+    sample_users = users_df["user_id"].sample(10).tolist()
+    with Pool() as pool:
+        results = pool.map(parallel_recommendations, 
+                          [(u, users_df, events_df, user_interests, user_history, event_users, event_categories) 
+                           for u in sample_users])
+    
+    # Evaluate
+    print("Evaluating recommendations...")
+    for user_id, recs in results:
+        precision, recall, f1 = evaluate_recommendations(user_id, recs, events_df, user_interests, event_categories)
+        print(f"User {user_id}: Precision={precision:.2f}, Recall={recall:.2f}, F1={f1:.2f}")
+    
+    # Organizer insights
+    print("Generating organizer insights...")
+    insights = organizer_insights(events_df, bookings_df, organizers_df)
+    print(insights.head())
+    
+    print(f"Total runtime: {time.time() - start_time:.2f} seconds")
