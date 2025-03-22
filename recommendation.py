@@ -57,10 +57,14 @@ def recommend_events(user_id, users_df, events_df, user_interests, user_history,
     # Filter to future events
     future_events = events_df[events_df["date"] > pd.Timestamp("today")]
     
-    # Vectorized scoring
-    loc_scores = (future_events["city"] == user_city).astype(int)
-    pref_scores = future_events["category"].isin(user_prefs).astype(int)
-    collab_scores = future_events["category"].isin(collab_categories).astype(int)
+    # Location-based scoring with exact city matching
+    loc_scores = np.where(future_events["city"] == user_city, 1.0, 0.0)  # 1.0 if same city, 0.0 otherwise
+    
+    # Preference and collaborative scoring
+    pref_scores = future_events["category"].isin(user_prefs).astype(float)
+    collab_scores = future_events["category"].isin(collab_categories).astype(float)
+    
+    # Combined scores
     scores = (WEIGHTS["location"] * loc_scores + 
               WEIGHTS["prefs"] * pref_scores + 
               WEIGHTS["collab"] * collab_scores)
@@ -123,7 +127,8 @@ if __name__ == "__main__":
     # Display recommendations and evaluate
     print("Recommendations and Evaluation:")
     for user_id, recs in results:
-        print(f"\nUser {user_id}:")
+        user_city = users_df[users_df["user_id"] == user_id]["city"].iloc[0]
+        print(f"\nUser {user_id} (Location: {user_city}):")
         for event in recs:
             print(f"  Event: {event['name']}, Type: {event['type']}, Category: {event['category']}, "
                   f"Location: {event['location']}, Date: {event['date']}, Time: {event['time']}")
