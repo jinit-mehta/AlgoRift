@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score, recall_score, f1_score
 from multiprocessing import Pool
 from random import uniform
@@ -70,10 +69,11 @@ def recommend_events(user_id, users_df, events_df, user_interests, user_history,
     explore_mask = (pref_scores == 0) & (np.random.uniform(0, 1, len(future_events)) < exploration_score)
     scores += explore_mask * 0.1
     
-    # Recommend top 5 un-attended future events
+    # Recommend top 5 un-attended future events with details
     mask = ~future_events["event_id"].isin(attended)
     top_indices = scores[mask].argsort()[-5:][::-1]
-    return future_events["event_id"][mask].iloc[top_indices].tolist()
+    recommended_events = future_events[mask].iloc[top_indices][["event_id", "name", "type", "category", "location", "date", "time"]]
+    return recommended_events.to_dict(orient="records")
 
 def evaluate_recommendations(user_id, recommendations, events_df, user_interests, event_categories):
     # Simulate future interest based on past interested categories
@@ -81,7 +81,7 @@ def evaluate_recommendations(user_id, recommendations, events_df, user_interests
     future_events = events_df[events_df["date"] > pd.Timestamp("today")]
     actual = set(future_events[future_events["category"].isin(interested_categories)]["event_id"])
     
-    predicted = set(recommendations)
+    predicted = {event["event_id"] for event in recommendations}
     if not actual or not predicted:
         return 0, 0, 0
     y_true = [1 if e in actual else 0 for e in predicted]
@@ -112,10 +112,6 @@ if __name__ == "__main__":
     users_df, events_df, bookings_df, organizers_df = load_data()
     users_df, events_df, user_interests, user_history, event_users, event_categories = preprocess_data(users_df, events_df, bookings_df)
     
-    # Split data (for reference, not used in evaluation here)
-    print("Splitting data...")
-    train_bookings, test_bookings = train_test_split(bookings_df, test_size=0.2, random_state=42)
-    
     # Generate recommendations
     print("Generating recommendations...")
     sample_users = users_df["user_id"].sample(10).tolist()
@@ -124,15 +120,19 @@ if __name__ == "__main__":
                           [(u, users_df, events_df, user_interests, user_history, event_users, event_categories) 
                            for u in sample_users])
     
-    # Evaluate
-    print("Evaluating recommendations...")
+    # Display recommendations and evaluate
+    print("Recommendations and Evaluation:")
     for user_id, recs in results:
+        print(f"\nUser {user_id}:")
+        for event in recs:
+            print(f"  Event: {event['name']}, Type: {event['type']}, Category: {event['category']}, "
+                  f"Location: {event['location']}, Date: {event['date']}, Time: {event['time']}")
         precision, recall, f1 = evaluate_recommendations(user_id, recs, events_df, user_interests, event_categories)
-        print(f"User {user_id}: Precision={precision:.2f}, Recall={recall:.2f}, F1={f1:.2f}")
+        print(f"  Precision={precision:.2f}, Recall={recall:.2f}, F1={f1:.2f}")
     
     # Organizer insights
-    print("Generating organizer insights...")
+    print("\nGenerating organizer insights...")
     insights = organizer_insights(events_df, bookings_df, organizers_df)
     print(insights.head())
     
-    print(f"Total runtime: {time.time() - start_time:.2f} seconds")
+    print(f"\nTotal runtime: {time.time() - start_time:.2f} seconds")
